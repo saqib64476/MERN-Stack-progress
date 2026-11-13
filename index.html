@@ -4,73 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #dbeafe, #e0e7ff);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            max-width: 400px;
-        }
-
-        h1 {
-            color: #2563eb;
-        }
-
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        button {
-            background: #2563eb;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #1d4ed8;
-        }
-    </style>
+    <title>Alex Morgan | Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
-
 <body>
 
-    <div class="container">
-        <h1>Welcome to My Website!</h1>
+<header class="navbar">
+    <a href="index.html" class="logo">Alex<span>.</span></a>
 
-        <p>
-            This is my first HTML project.
-            I am learning HTML, CSS and JavaScript.
-        </p>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
 
-        <button onclick="showMessage()">
-            Click Me
-        </button>
-    </div>
+    <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="mailto:hello@example.com" class="nav-btn">Let's Talk ↗</a>
+    </nav>
+</header>
 
-    <script>
-        function showMessage() {
-            alert("Welcome! Website is working perfectly.");
-        }
-    </script>
+<main>
+    <section class="hero container">
+
+        <div class="hero-content">
+            <div class="availability">
+                <span class="status-dot"></span>
+                Available for opportunities
+            </div>
+
+            <p class="eyebrow">HELLO, I'M ALEX MORGAN</p>
+
+            <h1>
+                Building Digital
+                <span>Experiences</span>
+                That Matter.
+            </h1>
+
+            <p class="hero-description">
+                I'm a Software Engineering student and aspiring
+                developer passionate about creating modern,
+                useful and beautiful digital products.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn-primary">
+                    Explore My Work ↗
+                </a>
+                <a href="about.html" class="btn-secondary">
+                    More About Me
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank">GitHub ↗</a>
+                <a href="https://linkedin.com/" target="_blank">LinkedIn ↗</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="profile-card">
+                <div class="profile-top">
+                    <span>DEVELOPER / CREATOR</span>
+                    <span>✦ 2026</span>
+                </div>
+
+                <div class="avatar">
+                    <span>AM</span>
+                </div>
+
+                <h2>Alex Morgan</h2>
+                <p>Software Engineer in Progress</p>
+
+                <div class="profile-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>C++</span>
+                </div>
+
+                <div class="profile-bottom">
+                    <span>Based in Pakistan</span>
+                    <span>✦</span>
+                </div>
+            </div>
+
+            <div class="floating-card floating-one">
+                <span>✦</span> Creative Thinking
+            </div>
+
+            <div class="floating-card floating-two">
+                <span>⌘</span> Clean Code
+            </div>
+        </div>
+
+    </section>
+
+    <section class="stats-section container">
+        <div class="stat">
+            <h2>03<span>+</span></h2>
+            <p>Projects Built</p>
+        </div>
+        <div class="stat">
+            <h2>05<span>+</span></h2>
+            <p>Technologies</p>
+        </div>
+        <div class="stat">
+            <h2>100<span>%</span></h2>
+            <p>Curiosity</p>
+        </div>
+        <div class="stat">
+            <h2>∞</h2>
+            <p>Ideas to Build</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">WHAT I DO</p>
+                <h2>Turning Ideas Into Reality.</h2>
+            </div>
+            <a href="about.html" class="text-link">Discover More ↗</a>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <span class="service-icon">⌘</span>
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites with clean code.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">✧</span>
+                <h3>Problem Solving</h3>
+                <p>Breaking complex problems into simple solutions.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">◈</span>
+                <h3>Creative Ideas</h3>
+                <p>Transforming creative concepts into digital experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section container">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2>Let's create something <span>amazing.</span></h2>
+        <a href="mailto:hello@example.com" class="btn-primary">
+            Get In Touch ↗
+        </a>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© <span id="year"></span> Alex Morgan. Built with passion.</p>
+    <a href="index.html">Back to top ↑</a>
+</footer>
 
 </body>
 </html>
