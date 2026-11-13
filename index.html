@@ -4,39 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+    <title>My Website</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #dbeafe, #e0e7ff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
             text-align: center;
-            padding: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 400px;
         }
 
         h1 {
             color: #2563eb;
         }
 
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
         button {
-            background-color: #2563eb;
+            background: #2563eb;
             color: white;
             padding: 12px 25px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>Hello World!</h1>
+    <div class="container">
+        <h1>Welcome to My Website!</h1>
 
-    <p>My first HTML webpage.</p>
+        <p>
+            This is my first HTML project.
+            I am learning HTML, CSS and JavaScript.
+        </p>
 
-    <button onclick="alert('HTML is working!')">
-        Click Me
-    </button>
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Welcome! Website is working perfectly.");
+        }
+    </script>
 
 </body>
 </html>
